@@ -4,6 +4,9 @@ import os
 import subprocess
 
 def run_pylint():
+    """
+    Run Pylint on all Python files in the current directory.
+    """
     python_files = [file for file in os.listdir() if file.endswith('.py')]
 
     if not python_files:
